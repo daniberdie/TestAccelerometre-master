@@ -11,7 +11,11 @@
     <string name="vendor">Vendor of the sensor:</string>
     <string name="version">Sensor version:</string>
     <string name="shuffed">Device was shuffed</string>
+    <string name="lightSensor">here is light sensor, MAX RANGE = </string>
+    <string name="NOlightSensor">There is no light sensor</string>
+    <string name="newVal">New Value light sensor: </string>
     ""
     <string name="AccelerometerSensorException">Sorry, there is no accelerometer</string>
 
 </resources>
+
