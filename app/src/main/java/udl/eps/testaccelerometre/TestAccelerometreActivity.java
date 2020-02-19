@@ -46,6 +46,8 @@ public class TestAccelerometreActivity extends Activity implements SensorEventLi
         {
 
             //Debemos asegurar que el sensor específico existe.
+
+            //Part A
             if (sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null)
             {
 
@@ -63,7 +65,7 @@ public class TestAccelerometreActivity extends Activity implements SensorEventLi
                 textView2.setText(R.string.AccelerometerSensorException);
             }
 
-            //partB
+            //Part B
             if (sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT) != null)
             {
                 lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
@@ -86,8 +88,8 @@ public class TestAccelerometreActivity extends Activity implements SensorEventLi
     {
         // register this class as a listener for the accelerometer sensor
         super.onResume();
-
-        sensorManager.registerListener(this, mAccelerometer, mAccelerometer.getMinDelay());
+    
+        sensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         //partB
         sensorManager.registerListener(this, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
